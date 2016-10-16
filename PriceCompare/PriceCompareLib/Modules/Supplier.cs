@@ -2,6 +2,7 @@
 
 namespace PriceCompareLib.Modules
 {
+    //Very good model design
     public class Supplier : System.IEquatable<Supplier>
     {
         public  string Name;

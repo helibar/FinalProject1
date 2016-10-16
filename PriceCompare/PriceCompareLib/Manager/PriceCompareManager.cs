@@ -27,8 +27,10 @@ namespace PriceCompareLib.Manager
             return _priceCompareEngineengine.GetTotalPriceDictionary();
         }
 
+        //Very good and flexible model!
         public Dictionary<Supplier, List<Item>> GetHighLowPrices()
         {
+            //Very good design!
             return _expensiveLowPricesEngine.GetHighestLowestPrices();
         }
 

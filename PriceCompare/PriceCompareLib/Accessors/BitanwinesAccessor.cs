@@ -9,6 +9,14 @@ using PriceCompareLib.Modules;
 
 namespace PriceCompareLib.Accessors
 {
+    /*The accessor classes are exact replicas of one another, except for the string constants
+     Which could have been introduced as constructor arguments
+
+    A class is justifyable not when you need a place to dump your code,
+    but when you have a set of logical operations and information which are bound together by some concern.
+
+    Consider: https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
+         */
     public class BitanwinesAccessor: IItemsAccess
     {
         public const string  ChainId= "7290725900003";

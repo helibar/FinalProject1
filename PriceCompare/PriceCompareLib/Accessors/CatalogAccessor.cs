@@ -12,6 +12,12 @@ using PriceCompareLib.Modules;
 
 namespace PriceCompareLib.Accessors
 {
+    /*
+     Your classes lack proper encapsulation- you expose members which should not be consumed by any classes except the containing class
+     You even expose such memebers in interfaces, and there's really no reason to do so
+
+        Consider: https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)
+         */
     public class CatalogAccessor
     {
         public XElement XmlElement => XElement.Load(GetXml());

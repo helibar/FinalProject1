@@ -10,6 +10,9 @@ namespace PriceCompareLib.Accessors
 {
     public interface IItemsAccess
     {
+        /*
+         * An interface should only expose members that will be consumed by other components than the implementation itself
+         */
         XElement XElement { get; }
         string GetRootDirectory();
         string GetXml();

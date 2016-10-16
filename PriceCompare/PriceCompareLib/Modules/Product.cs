@@ -2,6 +2,7 @@
 
 namespace PriceCompareLib.Modules
 {
+    //Very good model design
     public class Product
     {
         public readonly string Name;

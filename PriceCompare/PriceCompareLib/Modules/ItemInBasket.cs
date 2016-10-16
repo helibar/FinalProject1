@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace PriceCompareLib.Modules
 {
+    //Very good model design
     public class ItemInBasket
     {
         public Item Item { get; }

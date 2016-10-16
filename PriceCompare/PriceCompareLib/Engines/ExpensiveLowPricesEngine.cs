@@ -27,6 +27,10 @@ namespace PriceCompareLib.Engines
 
         private static void UpdateLowPrices(List<ItemInBasket> itemInBaskets, Dictionary<Supplier, List<Item>> highLowPricesDic, KeyValuePair<Supplier, List<ItemInBasket>> supplier)
         {
+
+            /*It is best to avoid magic numbers, such as '3'. 
+             * Consider: https://en.wikipedia.org/wiki/Magic_number_(programming)
+             */
             for (var i = 0; i < 3; i++)
             {
                 if (i >= itemInBaskets.Count)
@@ -39,6 +43,9 @@ namespace PriceCompareLib.Engines
 
         private static void UpdateHighPrices(List<ItemInBasket> itemInBaskets, Dictionary<Supplier, List<Item>> highLowPricesDic, KeyValuePair<Supplier, List<ItemInBasket>> supplier)
         {
+            /*It is best to avoid magic numbers, such as '3'. 
+            * Consider: https://en.wikipedia.org/wiki/Magic_number_(programming)
+            */
             for (var i = itemInBaskets.Count - 1; i > itemInBaskets.Count - 4; i--)
             {
                 if (i < 0)

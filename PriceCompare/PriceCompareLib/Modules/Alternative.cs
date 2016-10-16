@@ -1,5 +1,6 @@
 ﻿namespace PriceCompareLib.Modules
 {
+    //Very good model design
     public class Alternative
     {
         public string ItemCode { get; }
